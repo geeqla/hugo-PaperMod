@@ -4,7 +4,7 @@
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
         {{- else }}
-        <span>&copy; {{ if site.Params.launchYear }}{{ site.Params.launchYear }}&ndash;{{ end }}{{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+        <span>&copy; {{ if site.Params.launchYear }}{{ site.Params.launchYear }}&ndash;{{ end }}{{ now.Year }} {{ site.Title }}</span>
         {{- end }}
     {{- end }}
 
